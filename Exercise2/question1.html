@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>Hi My name is James Aldrin M. Odiong 
+    <b class="example" >Gwapoo</b>
+    My Current college is quite challenges because it is <b class="example"> online class</b>
+    Many things I need to adjust 
+    <b class="example">My life in college</b>
+</p>
+   <button onmouseover="myFunction()" onmouseout="mouseout()">highlight</button>
+   
+    </div>
+    <script>
+    
+function myFunction(){
+    for (let index = 0; index <document.getElementsByClassName('example').length; index++) {
+        document.getElementsByClassName('example')[index]
+                            .style.color="blue"
+        
+    }
+}
+
+function mouseout() {
+    for (let index = 0; index <document.getElementsByClassName('example').length; index++) {
+        document.getElementsByClassName('example')[index]
+                            .style.color="black"
+}
+}
+    </script>
+</body>
+</html>
