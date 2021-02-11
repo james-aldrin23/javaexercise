@@ -7,9 +7,37 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
+
     <script>
+
         var today = new Date();
-  var day = today.getDay();
+        document.getElementById("demo").innerHTML =  getDay(today.getDay()) + ". The remaning days until sunday is   " + (7 - today.getDay() + 7)+ ".";
+
+        function getDay(day) {
+            let dayLetter;
+            switch (day) {
+                case 1:
+                    dayLetter = "Monday";
+                    break;
+                case 2:
+                    dayLetter = "Tuesday";
+                    break;
+                case 3:
+                    dayLetter = "Wednesday";
+                    break;
+                case 4: dayLetter = "Thursday";
+                    break;
+                case 5: dayLetter = "Friday";
+                    break;
+                case 6: dayLetter = "Saturday";
+                    break;
+                case 7: dayLetter = "Sunday";
+                    break;
+            }            
+            return dayLetter
+        }
     </script>
 </body>
+
 </html>
