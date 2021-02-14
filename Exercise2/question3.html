@@ -11,12 +11,13 @@
   <button id="disabled" onclick="disable()">click2</button>
  <script>
      function enable() {
-         document.getElementById("enabled").disabled = true;
-         document.getElementById("disabled").disabled = false;
+        document.getElementById("enabled").disabled = false;
+         document.getElementById("disabled").disabled = true;
      }
      function disable() {
-         document.getElementById("enabled").disabled = false;
-         document.getElementById("disabled").disabled = true;
+       
+         document.getElementById("enabled").disabled = true;
+         document.getElementById("disabled").disabled = false;
      }
 
 
